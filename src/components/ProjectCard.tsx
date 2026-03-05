@@ -6,9 +6,10 @@ interface Props {
   project: Project;
   index: number;
   onClick: () => void;
+  buttonText?: string;
 }
 
-export default function ProjectCard({ project, index, onClick }: Props) {
+export default function ProjectCard({ project, index, onClick, buttonText = "Read More" }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -52,7 +53,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
           )}
 
           <div className="flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Read More <ArrowRight size={14} />
+            {buttonText} <ArrowRight size={14} />
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground mb-2 font-medium"
         >
-          Data Enthusiast • Aspiring Data Analyst
+          Data Enthusiast • Aspiring Data Analyst • Software Developer
         </motion.p>
 
         <motion.p
@@ -44,7 +44,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-muted-foreground/80 max-w-lg mx-auto mb-10 leading-relaxed"
         >
-          I analyze data to discover patterns, insights, and stories hidden inside numbers.
+          I analyze complex datasets to uncover patterns, generate insights, and build data-driven solutions that support smarter decisions.
         </motion.p>
 
         <motion.div

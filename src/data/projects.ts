@@ -8,6 +8,9 @@ import img4 from "@/assets/4.png";
 import img5 from "@/assets/5.png";
 import img6 from "@/assets/6.png";
 import img7 from "@/assets/7.png";
+import mock from "@/assets/mockmate.png";
+import mind from "@/assets/mindsphere.png";
+import carbon from "@/assets/carbon.png";
 
 export interface AnalysisSection {
   heading: string;
@@ -35,6 +38,7 @@ export interface Project {
   shortDescription: string;
   tags?: string[];
   image?: string;
+  link?: string;
 }
 
 export const projects: Project[] = [
@@ -45,6 +49,33 @@ export const projects: Project[] = [
     shortDescription: "Replace this with your real project entries.",
     tags: ["TypeScript", "React"],
     image: "/assets/placeholder.jpg",
+  },
+];
+
+export const devProjects: Project[] = [
+  {
+    id: "mock-mate",
+    title: "Mock Mate",
+    shortDescription: "AI-powered web app that enables users to conduct immersive mock interviews by creating custom interview sessions with job details, real-time question prompts, webcam integration, and detailed feedback for effective interview preparation.",
+    tags: ["React", "AI", "Node.js"],
+    image: mock,
+    link: "https://mock-mate-ten.vercel.app/",
+  },
+  {
+    id: "mind-sphere",
+    title: "Mind Sphere",
+    shortDescription: "Designed a mental wellness web app focused on mindfulness and stress management using over 20 reusable React components for consistency and modularity. Leveraging React hooks for state management and asynchronous data handling, the app delivers 100% functionality without class components.",
+    tags: ["React", "Wellness", "Component Design"],
+    image: mind,
+    link: "https://mind-leap-zeta.vercel.app/",
+  },
+  {
+    id: "carbon-chronicles",
+    title: "Carbon Chronicles",
+    shortDescription: "Developed an innovative website that uses interactive heatmaps to visualize carbon emissions and provide personalized plant recommendations for enhancing environmental sustainability.",
+    tags: ["React", "Data Visualization", "Environmental"],
+    image: carbon,
+    link: "https://avni235.github.io/CarbonChronicles/",
   },
 ];
 
@@ -68,7 +99,7 @@ export interface Blog {
 export const blogs: Blog[] = [
   {
     id: "ai-summit-2026-analysis",
-    title: "AI Summit 2026 — A Data-Driven Strategic Analysis",
+    title: "AI Summit 2026 : A Data-Driven Strategic Analysis",
     date: "2026",
     readTime: "12 min read",
     toolsAndMethods: `This project was built using Python, Pandas, NumPy, Matplotlib, Seaborn, NetworkX, and Scikit-learn. Methods included tag frequency analysis, network centrality, topic modeling (LDA), TF-IDF analysis, heatmaps, and time-based aggregation.`,
@@ -207,7 +238,7 @@ Instead of watching sessions, I analyzed 443 sessions, 2,562 speaker entries, se
   // ─────────────────────────────────────────────────────────────────────────────
   {
     id: "ecommerce-analytics-dashboard",
-    title: "E-Commerce Analytics Dashboard — Sales & Customer Intelligence",
+    title: "E-Commerce Analytics Dashboard : Sales & Customer Intelligence",
     date: "2026",
     readTime: "9 min read",
     toolsAndMethods: `Power BI was used for dashboard development, interactive filtering, KPI monitoring, and drill-down analysis across cities, product categories, time periods, and customers. Excel handled data preprocessing, cleaning, formatting, and structuring. Custom DAX measures were created to calculate Total Revenue, Average Order Value (AOV), Total Orders, Cancellation Rate, Lost Revenue from Cancellations, and Average Items per Transaction.`,
@@ -296,7 +327,7 @@ This project focuses on building a comprehensive E-Commerce Analytics Dashboard 
   // ─────────────────────────────────────────────────────────────────────────────
   {
     id: "cosmoinsights-cosmetics-analysis",
-    title: "CosmoInsights — A Data-Driven Analysis of E-Commerce Cosmetics Sales",
+    title: "CosmoInsights : A Data-Driven Analysis of E-Commerce Cosmetics Sales",
     date: "2026",
     readTime: "8 min read",
     toolsAndMethods: `Power BI was used for interactive dashboards, drill-down analysis, KPI tracking, and business reporting. Excel handled data cleaning, aggregation, formatting, and pivot analysis. Python with Pandas, Matplotlib, and Seaborn was used for exploratory analysis and pattern identification. More than 10 custom DAX measures were created including Total Revenue, Average Order Value, Monthly Sales Growth, Repeat Customer Rate, Revenue Segmentation, and Customer Frequency Metrics.`,

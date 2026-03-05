@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Instagram } from "lucide-react";
 
 const links = [
-  { icon: Mail, label: "Email", href: "mailto:avneet@example.com", text: "avneet@example.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/avneet", text: "linkedin.com/in/avneet" },
-  { icon: Github, label: "GitHub", href: "https://github.com/avneet", text: "github.com/avneet" },
+  { icon: Mail, label: "Email", href: "mailto:avneet.dhingra235@gmail.com", text: "avneet.dhingra235@gmail.com" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/avneet-kaur2/", text: "linkedin.com/in/avneet-kaur2" },
+  { icon: Github, label: "GitHub", href: "https://github.com/avni235", text: "github.com/avni235" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/avneet_exe", text: "instagram.com/avneet_exe" },
 ];
 
 export default function ContactSection() {
