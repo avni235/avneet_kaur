@@ -63,6 +63,7 @@ export default function ProjectsSection() {
                 title: project.title,
                 shortDescription: project.shortDescription,
                 image: project.image,
+                link: project.link,
               }}
               index={i}
               buttonText="Check It Out"
